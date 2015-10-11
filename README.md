@@ -4,7 +4,7 @@ Barblery, a Python image gallery generator
 This is my very first program in Python, dated 2005, consequently it is a piece of buggy and inefficient code.
 Recently I decided to reuse it because I need a simple way to manage remotely the pictures stored in my NAS.
 
-Following is the original presentarion.
+Following is the original presentation.
 
 Introduction
 ============
@@ -52,20 +52,21 @@ barblery [options] input_dir
 
 Available options:
 
-Short	Long	Description
--h 	--help	show this help message and exit
--v	--verbose	verbose mode ON [default]
--q	--quiet	run silent
--d DATA_DIR	--data-dir=DATA_DIR	data directory [HOME/.barblery_data]
--t TITLE	--title=TITLE	set HTML title to TITLE
--s	--show-buttons	show navigation buttons on page
--r BTN_ROOT_URL	--root_url=BTN_ROOT_URL	root button URL [root_directory]
--b BTN_BACK_URL	--back_url=BTN_BACK_URL	back button URL [root_directory]
--n IMG_PER_ROW	--image-per-row=IMG_PER_ROW	put n images in a row [5]
--i	--image-caption	show image filename as caption
-	--rebuild_css	overwrite CSS file if found
--c CSS_FILENAME	--css_file=CSS_FILENAME	use different stylesheet
--g GEOMETRY	--geometry=GEOMETRY	thumbnails dimension [120x120]
+Short	        |Long                         | Description
+----------------|-----------------------------|----------------------------------
+-h              |--help                       | show this help message and exit
+-v              |--verbose                    | verbose mode ON [default]
+-q              |--quiet                      | run silent
+-d DATA_DIR     | --data-dir=DATA_DIR         |	data directory [HOME/.barblery_data]
+-t TITLE        | --title=TITLE	              | set HTML title to TITLE
+-s	            |--show-buttons	              | show navigation buttons on page
+-r BTN_ROOT_URL | --root_url=BTN_ROOT_URL     | root button URL [root_directory]
+-b BTN_BACK_URL	| --back_url=BTN_BACK_URL     |	back button URL [root_directory]
+-n IMG_PER_ROW	| --image-per-row=IMG_PER_ROW | put n images in a row [5]
+-i	            | --image-caption	          | show image filename as caption
+	            | --rebuild_css	              | overwrite CSS file if found
+-c CSS_FILENAME	| --css_file=CSS_FILENAME     | use different stylesheet
+-g GEOMETRY	    | --geometry=GEOMETRY         |	dimension of thumbnails [120x120]
 
 License
 -------
@@ -80,12 +81,12 @@ Other similar programs
 
 Choise is always better. Probably you will find interesting and better this programs
 
-    igal is a similar program written in Perl, it is available in many GNU/Linux distributions; the program home page is http://www.stanford.edu/~epop/igal
-    Konqueror, the KDE file browser, has an automatic gallery generator
-    Jalbum is a Java-based web album generator, free and highly customizable, home page is http://jalbum.net 
+ - igal is a similar program written in Perl, it is available in many GNU/Linux distributions; the program home page is http://www.stanford.edu/~epop/igal
+ - Konqueror, the KDE file browser, has an automatic gallery generator
+ - Jalbum is a Java-based web album generator, free and highly customizable, home page is http://jalbum.net 
 
 Credits
 Thanks to:
 
-    The Python language, finally a powerfull and easy Object Oriented language
-    My friend D.M. (he wants to remain anonymous) who wrotes the very first lines of Barblery unveiling me some of the great features of Python language. The name Barblery was also suggested by him, it's a merge beetwen words Barba (beard, a nickname I have at work) and Gallery 
+ - The Python language, finally a powerfull and easy Object Oriented language
+ - My friend D.M. (he wants to remain anonymous) who wrotes the very first lines of Barblery unveiling me some of the great features of Python language. The name Barblery was also suggested by him, it's a merge beetwen words Barba (beard, a nickname I have at work) and Gallery 
