@@ -1,0 +1,4 @@
+-Read globals from a configuration file
+-Manage error conditions
+-Manage command line options
+-When reading description.txt, manage special chars and convert http address into html anchor

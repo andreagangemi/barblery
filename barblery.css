@@ -1,0 +1,27 @@
+body,h1,h2,h3,h4,h5,h6,p,center,td,th,ul,dl,div 
+{
+	font-family: Geneva, Arial, Helvetica, sans-serif;      
+	color: #1A419D;	  
+	background-color: #EEEEFF;
+}
+body,td 
+{       
+	font-size: 90%;
+}
+h1 
+{	
+	text-align: center;       
+	font-size: 160%;
+}
+h2 
+{       
+	font-size: 120%;
+}
+h3 
+{       
+	font-size: 110%;
+}
+hr
+{
+	width: 100%;
+}
