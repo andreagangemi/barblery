@@ -22,9 +22,9 @@ import commands
 import shutil
 import code
 from optparse import OptionParser
-from time import gmtime, strftime 
+from time import gmtime, strftime
 
-version_string = "1.0"
+__version__ = "1.0"
 
 
 def immagina(options, dove, previous):
@@ -90,6 +90,7 @@ def make_html_title(titolo, tempstr):
     tempstr = tempstr.replace('<!-- barblerytemplate_title -->', titolo)
     return tempstr
 
+
 def make_html_header(titolo, tempstr, options, prev):
     """ Creates HTML header """
     tempstr = tempstr.replace('<!-- barblerytemplate_header -->', '\
@@ -103,6 +104,7 @@ def make_html_header(titolo, tempstr, options, prev):
                 btn_str = btn_str + '<a href="' + prev + '/images.html">' + '<img src=".barblery/back_button.png" hspace=8 vspace=8 border="0"alt="Back"></a>\n</br>\n'
         tempstr = tempstr.replace('<!-- barblerytemplate_buttons -->', btn_str)
     return tempstr
+
 
 def make_html_description(tempstr,verbose):
     """ put the contents of description.txt if found """
@@ -120,6 +122,7 @@ def make_html_description(tempstr,verbose):
         descriptionfile.close
         # replace special chars
     return tempstr.replace('<!-- barblerytemplate_description -->', descstr)
+
 
 def make_html_contents(tempstr,options):
     """ put directories and images listing """
@@ -188,7 +191,6 @@ def make_html_contents(tempstr,options):
     return (dirfiles + img_number), tempstr
 
 
-
 def make_html_trailer(tempstr):
     """ Create HTML trailer """
 
@@ -206,6 +208,7 @@ def make_stylesheet(options):
         commands.getstatusoutput('cp ' + options.data_dir + '/' + options.css_filename + ' .')
 
     return
+
 
 def main():
 
@@ -279,7 +282,7 @@ def main():
         parser.error("incorrect number of arguments")
     if options.verbose:
         print ' '
-        print ' Hi, this is Barblery ' + version_string + ' 8-)'
+        print ' Hi, this is Barblery ' + __version__ + ' 8-)'
         print ' Written by Andrea Gangemi: http://harzack.freeshell.org '
         print ' '
         print ' REMEMBER: BARBLERY COMES WITHOUT WARRANTY OF ANY KIND '
