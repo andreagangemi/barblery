@@ -159,11 +159,11 @@ def make_html_contents(tempstr, options):
         print ' Generating image gallery'
         print ' [mumble mumble]...'
     jpg_list = [x for x in os.listdir(".")
-                if os.path.isfile(x)
-                and not commands.getstatusoutput('convert -resize ' +
-                                                 options.geometry + ' "' +
-                                                 x + '" ".thumbs/' +
-                                                 x + '"')[0]]
+                if os.path.isfile(x) and not
+                commands.getstatusoutput('convert -resize ' +
+                                         options.geometry + ' "' +
+                                         x + '" ".thumbs/' +
+                                         x + '"')[0]]
     img_number = len(jpg_list)
     if options.verbose:
         print ' ' + str(img_number) + ' thumbs created:'

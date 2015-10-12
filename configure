@@ -7,5 +7,5 @@ echo Copying data directory
 cp *.png $HOME/.barblery_data
 cp *.css $HOME/.barblery_data
 cp *.html $HOME/.barblery_data
-cp *.cfg $HOME/.barblery_data
+
 
